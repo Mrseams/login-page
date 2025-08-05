@@ -34,15 +34,21 @@
     }
 
     .login-form {
-      gap: 6rem;
+      gap: 5rem;
       width: 45%;
       height: 100%;
       padding: 1rem;
       display: flex;
-      align-items: center;
       flex-direction: column;
 
       #form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: calc(100% - 3.125rem);
+
         .login-form-title {
           font-size: 25px;
           font-style: Bold;
@@ -50,6 +56,7 @@
           line-height: 117%;
           letter-spacing: 0%;
           text-align: center;
+          color: black;
         }
 
         .login-form-subtitle {
@@ -59,12 +66,12 @@
           letter-spacing: 0%;
           text-align: center;
           font-style: Regular;
+          color: black;
         }
 
         form {
           gap: 0.6rem;
           width: 100%;
-          height: 100%;
           display: flex;
           align-items: center;
           flex-direction: column;
@@ -98,7 +105,7 @@
           }
 
           .login-options {
-            justify-self: normal !important;
+            width: 100%;
 
             label {
               font-size: 0.6875rem;
